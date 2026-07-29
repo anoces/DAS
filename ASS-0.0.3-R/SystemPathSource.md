@@ -6,11 +6,11 @@
 # ROOT PATH :
 - G:\iKorns\ASS\ASS-0.0.3-R\...
 
-# /VENDOR
-* Path "/Vendor" only for build source code then build
+# \VENDOR
+* Path "\Vendor" only for build source code then build
 done export to another folder.
 * DO NOT Dependency or References anything to /Vender.
-* / Vendor can be delete or edited anything.
+* \Vendor can be delete or edited anything.
 
 - Vendor\Archive\...
 - Vendor\Eigen\...
@@ -19,7 +19,7 @@ done export to another folder.
 - Vendor\Fftw\...
 - Vendor\Taglib\...
   
-# /BUILD
+# \BUILD
 * Include ".bat / .ps1 " for build library.
 
 - Build\Essentia\...
@@ -29,7 +29,7 @@ done export to another folder.
 - Build\Temp\...
 
 # \RUNTIME
-* Build from /vendor to rumtimme process for reference 
+* Build from \vendor to rumtimme process for reference 
 or dependency to file core process import dll native.
 
 # \Runtime\Eigen
