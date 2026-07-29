@@ -22,10 +22,11 @@
 * Boundary : Inspector data, Metadata, ...
 - ASSAnalyze.py
 * Boundary : Orchestrated Analyze Only.
+- ASSPayload.py
 - ASSVerifiedPayload.py
 * Boundary : Process Analyzer With Payload.
-- ASSReport.py
 - ASSCacheFile.py
+- ASSReport.py
 * Boundary : Create "Write/Read" files cache.
 - ASSLogs.py
 * Boundary : Create "Weite/Read" files log.
@@ -39,4 +40,10 @@
 - ↓
 - ASSAnalyze.py
 - ↓
+- ASSPayload.py
+- ↓
 - ASSVerifiedPayload.py
+- ↓
+- ASSCacheFile.py
+- ↓
+- ASSReport.py
