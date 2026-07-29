@@ -5,6 +5,15 @@
 - Change Files name.
 - Encryption any files for protection Edited File.
 
+# VENDOR [ LIBRARY ].
+* Source code downloading library github and build
+to DLL Native to another folder.
+- Ffmpeg
+- Essentia
+- Taglib
+- Eigen
+- Fftw3
+
 # INPUT :
 - Audio Sound.
 
@@ -12,7 +21,7 @@
 - Change files name.
 
 # ANALYZE INCLUDE :
-- BPM, KEY, GENRE, BITRATE, SAMPLE RATE, CODEC
+- BPM, KEY, GENRE, BITRATE, SAMPLE RATE, CODEC, ...
 
 # WORKING STEP REQUIREMENT :
 - Choose or Dragging Path Folder Entry Input source
@@ -51,7 +60,7 @@ include all aduio files supported.
 - ↓
 - ASSGuiWorker.py
 - ↓
-- ASSInpector.py
+- ASSInspector.py
 - ↓
 - ASSAnalyze.py
 - ↓
