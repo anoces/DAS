@@ -32,11 +32,11 @@
 
 # PIPELINE STAGE :
 - ASSGui.py
-↓
+- ↓
 - ASSGuiWorker.py
-↓
+- ↓
 - ASSInpector.py
-↓
+- ↓
 - ASSAnalyze.py
-↓
+- ↓
 - ASSVerifiedPayload.py
