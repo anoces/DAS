@@ -23,13 +23,14 @@
 - ASSAnalyze.py
 * Boundary : Orchestrated Analyze Only.
 - ASSPayload.py
+* Boundary: Cearte "Write/Read" Paylode.
 - ASSVerifiedPayload.py
 * Boundary : Process Analyzer With Payload.
 - ASSCacheFile.py
 - ASSReport.py
 * Boundary : Create "Write/Read" files cache.
 - ASSLogs.py
-* Boundary : Create "Weite/Read" files log.
+* Boundary : Create "Write/Read" files log.
 
 # PIPELINE STAGE :
 - ASSGui.py
