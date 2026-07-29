@@ -26,6 +26,17 @@
 * Boundary : Process Analyzer With Payload.
 - ASSReport.py
 - ASSCacheFile.py
-* Boundary : Create files cache.
+* Boundary : Create "Write/Read" files cache.
 - ASSLogs.py
-* Boundary : Create files log.
+* Boundary : Create "Weite/Read" files log.
+
+# PIPELINE STAGE :
+ASSGui.py
+↓
+ASSGuiWorker.py
+↓
+ASSInpector.py
+↓
+ASSAnalyze.py
+↓
+ASSVerifiedPayload.py
