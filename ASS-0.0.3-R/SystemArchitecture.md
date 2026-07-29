@@ -3,7 +3,14 @@
 
 # TARGET :
 - Change Files name.
-- Encryption any files for protection Edited File.
+
+# ENCRYPTION :
+* Encryption any files for protection Edited File.
+* Extensions: .pyd, .dll, .sig, ...
+* All Source code be done any files include encryption.
+
+# BUILD AND INSTALLER [ EXE ].
+- Used NSIS And NUNIKA.
 
 # VENDOR [ LIBRARY ].
 * Source code downloading library github and build
