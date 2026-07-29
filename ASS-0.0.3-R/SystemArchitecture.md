@@ -3,6 +3,7 @@
 
 # TARGET :
 - Change Files name.
+- Encryption any files for protection Edited File.
 
 # ANALYZE INCLUDE :
 - BPM, KEY, GENRE, BITRATE, SAMPLE RATE, CODEC
