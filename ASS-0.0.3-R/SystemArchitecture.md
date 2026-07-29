@@ -14,6 +14,20 @@
 # ANALYZE INCLUDE :
 - BPM, KEY, GENRE, BITRATE, SAMPLE RATE, CODEC
 
+# WORKING STEP REQUIREMENT :
+- Choose or Dragging Path Folder Entry Input source
+include all aduio files supported.
+- Choose output or destination source.
+- Click or Processing Start Analyze.
+- Waiting propress be done for analyze.
+- Payload Data about Metadata, Decoder, ...
+- Mapping Source Decision for Bpm, Key, Genre, ...
+- Expand metadata.
+- Changing files name with Pattern User Requirements.
+- Output files or destination source.
+- Recheck or validate just be done.
+- Done.
+
 # FILES :
 - ASSGui.py
 * Boundary : Gui appear Interface Input for user.
