@@ -1,4 +1,6 @@
 
+# ASS-0.0.3-R
+
 
 # /VENDOR
 * Path "/Vendor" only for build source code then build
@@ -11,7 +13,8 @@ done export to another folder.
 - /Vendor/Ffmpeg/...
 
 # /BUILD
-* 
+* Include ".bat / .ps1 " for build library.
+
 
 # /RUNTIME
 * Build from /vendor to rumtimme process for reference 
@@ -20,3 +23,4 @@ or dependency to file core process import dll native.
 - /Runtime/Ffmpeg/...
 - /Runtime/Essentia/...
 - /Rumtime/Taglib/...
+
