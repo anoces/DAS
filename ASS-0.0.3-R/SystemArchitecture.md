@@ -31,12 +31,12 @@
 * Boundary : Create "Weite/Read" files log.
 
 # PIPELINE STAGE :
-ASSGui.py
+- ASSGui.py
 ↓
-ASSGuiWorker.py
+- ASSGuiWorker.py
 ↓
-ASSInpector.py
+- ASSInpector.py
 ↓
-ASSAnalyze.py
+- ASSAnalyze.py
 ↓
-ASSVerifiedPayload.py
+- ASSVerifiedPayload.py
