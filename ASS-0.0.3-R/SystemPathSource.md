@@ -9,7 +9,8 @@
 # \VENDOR
 * Path "\Vendor" only for build source code then build
 done export to another folder.
-* DO NOT Dependency or References anything to /Vender.
+* The application must never reference or load from vendor directly.
+All runtime dependency must be loaded from runtime only.
 * \Vendor can be delete or edited anything.
 
 - Vendor\Archive\...
