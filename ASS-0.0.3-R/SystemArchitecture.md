@@ -49,6 +49,7 @@ include all aduio files supported.
 - Done.
 
 # FILES :
+- ASSApplication.py
 - ASSGui.py
 * Boundary : Gui appear Interface Input for user.
 - ASSGuiWorker.py
@@ -61,7 +62,10 @@ include all aduio files supported.
 - ASSVerifiedPayload.py
 * Boundary : Process Analyzer With Payload.
 - ASSCacheFile.py
+* Purpose :
+* Boundary :
 - ASSReport.py
+* Purpose : 
 * Boundary : Create "Write/Read" files cache.
 - ASSLogs.py
 * Purpose : 
