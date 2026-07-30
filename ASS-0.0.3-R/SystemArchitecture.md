@@ -2,7 +2,8 @@
 
 
 # TARGET :
-- Change Files name.
+- Change Files name with Pattern Customer.
+- Example : "161 - 9A - ..." or " 61 - 6B ".
 
 # ENCRYPTION :
 * Encryption any files for protection Edited File.
@@ -11,6 +12,8 @@
 
 # BUILD AND INSTALLER [ EXE ].
 - Used NSIS And NUNIKA.
+- Software or System used free 3 Day.
+- License Key : Activate Full License.
 
 # VENDOR [ LIBRARY ].
 * Source code downloading library github and build
@@ -29,6 +32,7 @@ to DLL Native to another folder.
 
 # ANALYZE INCLUDE :
 - BPM, KEY, GENRE, BITRATE, SAMPLE RATE, CODEC, ...
+- Used Library "ESSENTIA" for analyze.
 
 # WORKING STEP REQUIREMENT :
 - Choose or Dragging Path Folder Entry Input source
@@ -60,9 +64,12 @@ include all aduio files supported.
 - ASSReport.py
 * Boundary : Create "Write/Read" files cache.
 - ASSLogs.py
+* Purpose : 
 * Boundary : Create "Write/Read" files log.
 
 # PIPELINE STAGE :
+- ASSApplication.py
+- ↓
 - ASSGui.py
 - ↓
 - ASSGuiWorker.py
