@@ -84,43 +84,152 @@ include all aduio files supported.
 - Done.
 
 # FILES :
-- ASSApplication.py
-- ASSGui.py
-* Boundary : Gui appear Interface Input for user.
-- ASSGuiWorker.py
-- ASSInspector.py
-* Boundary : Inspector data, Metadata, ...
-- ASSAnalyze.py
-* Boundary : Orchestrated Analyze Only.
-- ASSPayload.py
-* Boundary: Cearte "Write/Read" Paylode.
-- ASSVerifiedPayload.py
-* Boundary : Process Analyzer With Payload.
-- ASSCacheFile.py
-* Purpose :
-* Boundary :
-- ASSReport.py
-* Purpose : 
-* Boundary : Create "Write/Read" files cache.
-- ASSLogs.py
-* Purpose : 
-* Boundary : Create "Write/Read" files log.
+1. ASSApplication.py
+- - -
+PURPOSE
+- Application Entry Point
+- Initialize Runtime
+- Create Main Window
+- Control Application Lifecycle
+BOUNDARY
+- Interface
+- Startup / Shutdown
+- Global Application Control
+
+2. ASSGui.py
+- - -
+PURPOSE
+- Main User Interface
+- Handle User Interaction
+- Display Analysis Result
+- Dispatch User Commands
+BOUNDARY
+- GUI Only
+- No Business Logic
+- No Audio Analysis
+
+3. ASSGuiWorker.py
+- - -
+PURPOSE
+- Background Worker
+- Execute Long Running Tasks
+- Progress Reporting
+- Thread Communication
+BOUNDARY
+- Background Process Only
+- No Analysis Logic
+
+4. ASSInspector.py
+- - -
+PURPOSE
+- Inspect Input Files
+- Validate Audio Files
+- Read Metadata
+- Detect Audio Information
+BOUNDARY
+- Metadata
+- File Inspection
+- File Validation
+- No Audio Analysis
+
+5. ASSAnalyze.py
+- - -
+PURPOSE
+- Central Analysis Orchestrator
+- Execute Analysis Pipeline
+- Manage Analysis Flow
+- Coordinate Runtime Modules
+BOUNDARY
+- Orchestrated Analysis Only
+- No GUI
+- No File Storage
+
+6. ASSRuntime.py
+- - -
+PURPOSE
+- Runtime Manager
+- Load Native Libraries
+- Manage Runtime Environment
+- Provide Runtime Services
+BOUNDARY
+- Runtime Layer
+- Native Library Access
+- Environment Initialization
+
+7. ASSPayload.py
+- - -
+PURPOSE
+- Create Analysis Payload
+- Read / Write Payload
+- Serialize Analysis Data
+- Exchange Data Between Modules
+BOUNDARY
+- Payload Only
+- No Analysis
+
+8. ASSVerifiedPayload.py
+- - -
+PURPOSE
+- Validate Payload
+- Process Verified Analysis Data
+- Ensure Payload Integrity
+BOUNDARY
+- Verified Payload Processing
+- Validation Layer
+
+9. ASSCacheFile.py
+- - -
+PURPOSE
+- Cache Manager
+- Read Cache
+- Write Cache
+- Cache Validation
+BOUNDARY
+- Cache Only
+- No Analysis Logic
+
+10. ASSReport.py
+- - -
+PURPOSE
+- Generate Analysis Report
+- Export Result
+- Read / Write Report Files
+BOUNDARY
+- Report Generation
+- File Output
+
+11. ASSLogs.py
+- - -
+PURPOSE
+- Logging System
+- Read / Write Log Files
+- Error Logging
+- Debug Logging
+BOUNDARY
+- Logging Only
+- No Business Logic
+
+
 
 # PIPELINE STAGE :
-- ASSApplication.py
+- ASSApplication
 - ↓
-- ASSGui.py
+- ASSGui
 - ↓
-- ASSGuiWorker.py
+- ASSGuiWorker
 - ↓
-- ASSInspector.py
+- ASSRuntime
 - ↓
-- ASSAnalyze.py
+- ASSInspector
 - ↓
-- ASSPayload.py
+- ASSAnalyze
 - ↓
-- ASSVerifiedPayload.py
+- ASSPayload
 - ↓
-- ASSCacheFile.py
+- ASSVerifiedPayload
 - ↓
-- ASSReport.py
+- ASSCacheFile
+- ↓
+- ASSReport
+- ↓
+- ASSLogs
