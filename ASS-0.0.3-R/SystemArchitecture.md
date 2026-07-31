@@ -23,6 +23,41 @@ to DLL Native to another folder.
 - Taglib
 - Eigen
 - Fftw3
+- Audioflux
+- Basics
+- Drlibs
+- Dsp
+- Jsondevelop (nlohmann/json)
+- Kissfft
+- Libebur128
+- Libxtract
+- Miniaudio
+- Onnxruntime
+- Pffft
+- Signalsmithstretch
+- Tinyxml2
+
+# RUNTIME [ WARNING LICENSE ].
+- Essentia
+- Fftw3
+
+# RUNTIME [ RUNTIME USED ].
+- Ffmpeg
+- Taglib
+- Eigen
+- Audioflux
+- Basics
+- Drlibs
+- Dsp
+- Jsondevelop (nlohmann/json)
+- Kissfft
+- Libebur128
+- Libxtract
+- Miniaudio
+- Onnxruntime
+- Pffft
+- Signalsmithstretch
+- Tinyxml2
 
 # INPUT :
 - Audio Sound.
