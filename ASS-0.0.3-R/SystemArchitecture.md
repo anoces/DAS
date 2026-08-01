@@ -5,6 +5,12 @@
 - Change Files name with Pattern Customer.
 - Example : "161 - 9A - ..." or " 61 - 6B ".
 
+# INPUT :
+- Audio Sound.
+
+# OUTPUT :
+- Change files name.
+
 # ENCRYPTION :
 * Encryption any files for protection Edited File.
 * Extensions: .pyd, .dll, .sig, ...
@@ -14,6 +20,69 @@
 - Used NSIS And NUNIKA.
 - Software or System used free 3 Day.
 - License Key : Activate Full License.
+
+# MODULE IMPORT :
+
+1.- NumPy
+2.- SciPy
+3.- Numba
+PURPOSE :
+- Scientific Computing.
+BOUNDARY :
+- Matrix
+- Vector
+- DSP
+- Signal
+- Numerical
+
+- - - 
+
+4.- Polars
+5.- PyArrow
+PURPOSE :
+- Data Engin.
+BOUNDARY :
+- DataFrame
+- Search
+- Sort
+- Join
+- Cache
+- Parquet
+
+- - - 
+
+7.- Orjson
+PURPOSE :
+- Serialization
+BOUNDARY :
+- Payload
+- Cache
+- Config
+- RuntimeData
+
+- - -
+8.- Platformdirs
+9.- Psutil
+PURPOSE :
+- System
+BOUNDARY :
+- Cpu
+- Memory
+- Disk
+- Config
+- CachePath
+
+- - -
+
+10.- Tqdm
+11.- Xxhash
+12.- PythonDotenv
+PURPOSE :
+- Untility
+BOUNDARY :
+- Progress
+- FileFingerPrint
+- Configuration
 
 # VENDOR [ LIBRARY ].
 * Source code downloading library github and build
@@ -59,12 +128,6 @@ to DLL Native to another folder.
 - Signalsmithstretch
 - Tinyxml2
 
-# INPUT :
-- Audio Sound.
-
-# OUTPUT :
-- Change files name.
-
 # ANALYZE INCLUDE :
 - BPM, KEY, GENRE, BITRATE, SAMPLE RATE, CODEC, ...
 - Used Library "ESSENTIA" for analyze.
@@ -84,8 +147,11 @@ include all aduio files supported.
 - Done.
 
 # REGISTRY :
-* PATH : ASS-0.0.3-R
-1.- ASSConfigRegistry.json
+* PATH : ASS-0.0.3-R\Registry\...
+1.- ASSRegistry.json
+BOUNDARY :
+- Index Files Registry.
+2.- 
 
 # FILES :
 1.- ASSApplication.py
@@ -112,7 +178,7 @@ BOUNDARY
 - No Business Logic
 - No Audio Analysis
 
-3. ASSGuiWorker.py
+3.- ASSGuiWorker.py
 - - -
 PURPOSE
 - Background Worker
@@ -213,7 +279,36 @@ BOUNDARY
 - Logging Only
 - No Business Logic
 
+12. ASSNotifiedTelegram.py
+- - -
+PURPOSE :
+- Notified "Telegram"
+- Notified any process or progress.
+- Used "Api Key Token"
+BOUNDARY :
+BOT1 : Notified System / Development - Notifeid for
+Development and include Record Files and Audio Files.
+Developer And Administrators is this group.
+BOT2 : Notified for User and Customer to this group.
 
+13. ASSNotifiedDiscord.py
+- - -
+PURPOSE :
+- Notified "Discord"
+- Notified for open System or Program that first times.
+- Used "Webhook"
+BOUNDARY :
+- Notified for get enviroment any thing.
+- This group only for Developer and Administrators.
+
+14.- ASSNotifiedLine.py
+PURPOSE :
+- Notifed "Line".
+- Notified only per one day, Set Schedules time 00:00.
+BOUNDARY :
+- This group only Developer and Administrator.
+- Notified Sumary for log and anything per one day.
+- On Operating System Opening Service Automatically.
 
 # PIPELINE STAGE :
 - ASSApplication
