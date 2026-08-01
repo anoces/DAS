@@ -356,7 +356,7 @@ PURPOSE :
 - Score decision with Customer only.
 BOUNDARY :
 - Read Decision.
-- Write Decision.
+- Evaluate, Score, Recommend.
 - Update Desicion.
 
 18.- ASSNotifiedManagement.py
@@ -370,15 +370,30 @@ BOUNDARY :
 PURPOSE :
 BOUNDARY :
 
-21.- ASSLicense.py
+21.- ASSState.py
+- - -
+PURPOSE :
+- State.
+- Idle.
+- Running.
+- Pause.
+- Cancel.
+- Complete.
+- Error.
+BOUNDARY :
+
+22.- ASSLicense.py
 PURPOSE :
 - Requirement 3 Day Free trail license.
 - Entry Hash Key for full license.
-BOUNDARY:
+BOUNDARY :
 - Read files ASSLicenseRegistry.json with ASSRegistry.py.
 - Write for hash key.
+- Validate License.
+- Check Expire.
+- Activate.
 
-22.- ASSNotifiedTelegram.py
+23.- ASSNotifiedTelegram.py
 - - -
 PURPOSE :
 - Provider and Owner Telegram.
@@ -391,7 +406,7 @@ Development and include Record Files and Audio Files.
 Developer And Administrators is this group.
 BOT2 : Notified for User and Customer to this group.
 
-23.- ASSNotifiedDiscord.py
+24.- ASSNotifiedDiscord.py
 - - -
 PURPOSE :
 - Provider And Owner Discord.
@@ -402,7 +417,7 @@ BOUNDARY :
 - Notified for get enviroment any thing.
 - This group only for Developer and Administrators.
 
-24.- ASSNotifiedLine.py
+25.- ASSNotifiedLine.py
 PURPOSE :
 - Provider And Owner Line.
 - Notifed "Line".
