@@ -16,6 +16,7 @@
 "yyMMddhhmmss-Millisecond-Random" Example :
 "260701135500-761-9A6X3E"
 - Do not anyfiles pass without "ASSRegistry.py".
+- Registry is the single source of truth.
 - "\Logs\..." This path for logs files only.
 - "\Payload\..." Analyze per one payload create payload
 or create used pattern name per hash or per one analyzer,
@@ -313,21 +314,50 @@ BOUNDARY :
 14.- ASSConfig.py
 - - - 
 PURPOSE :
+- Configuration Management.
+- Environments.
+- Runtime Path.
+- Notification.
 BOUNDARY :
+- Configuration Only.
+- No Runtime.
 
 15.- ASSContext.py
 - - -
 PURPOSE :
 - Core Context Process.
+- Global Runtime Context.
+- Current Session.
+- Current Configuration.
+- Current User.
 BOUNDARY : 
+- Context only.
+- No Analysis.
+- No Gui.
+- No Files Access.
 
 16.- ASSVersion.py
 - - -
 PURPOSE :
 - Control Version System.
+- Application Version.
+- Payload Version.
+- Runtime Version.
+- Build Version.
+- Inataller Vwraion.
 BOUNDARY :
 
 17.- ASSException.py
+
+18.- ASSDecision.py
+- - - 
+PURPOSE : 
+- Decision Management with Customer Requirements.
+- Score decision with Customer only.
+BOUNDARY :
+- Read Decision.
+- Write Decision.
+- Update Desicion.
 
 18.- ASSNotifiedManagement.py
 - - - 
@@ -335,7 +365,20 @@ PURPOSE :
 - Control And Management to Provider.
 BOUNDARY :
 
-19.- ASSNotifiedTelegram.py
+20.- ASSSession.py
+- - -
+PURPOSE :
+BOUNDARY :
+
+21.- ASSLicense.py
+PURPOSE :
+- Requirement 3 Day Free trail license.
+- Entry Hash Key for full license.
+BOUNDARY:
+- Read files ASSLicenseRegistry.json with ASSRegistry.py.
+- Write for hash key.
+
+22.- ASSNotifiedTelegram.py
 - - -
 PURPOSE :
 - Provider and Owner Telegram.
@@ -348,7 +391,7 @@ Development and include Record Files and Audio Files.
 Developer And Administrators is this group.
 BOT2 : Notified for User and Customer to this group.
 
-20.- ASSNotifiedDiscord.py
+23.- ASSNotifiedDiscord.py
 - - -
 PURPOSE :
 - Provider And Owner Discord.
@@ -359,7 +402,7 @@ BOUNDARY :
 - Notified for get enviroment any thing.
 - This group only for Developer and Administrators.
 
-21.- ASSNotifiedLine.py
+24.- ASSNotifiedLine.py
 PURPOSE :
 - Provider And Owner Line.
 - Notifed "Line".
