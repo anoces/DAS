@@ -11,6 +11,16 @@
 # OUTPUT :
 - Change files name.
 
+# RULER :
+- Pattern name report or anyfiles used :
+"yyMMddhhmmss-Millisecond-Random" Example :
+"260701135500-761-9A6X3E"
+- Do not anyfiles pass without "ASSRegistry.py".
+- "\Logs\..." This path for logs files only.
+- "\Payload\..." Analyze per one payload create payload
+or create used pattern name per hash or per one analyzer,
+Used "260701135500-761-9A6X3E.parquet".
+
 # ENCRYPTION :
 * Encryption any files for protection Edited File.
 * Extensions: .pyd, .dll, .sig, ...
@@ -151,7 +161,9 @@ include all aduio files supported.
 1.- ASSRegistry.json
 BOUNDARY :
 - Index Files Registry.
-2.- 
+2.- ASSDecisionRegistry.json
+3.- ASSPayloadRegistry.json
+4.- 
 
 # FILES :
 1.- ASSApplication.py
@@ -214,7 +226,7 @@ BOUNDARY
 - No GUI
 - No File Storage
 
-6. ASSRuntime.py
+6.- ASSRuntime.py
 - - -
 PURPOSE
 - Runtime Manager
@@ -226,7 +238,7 @@ BOUNDARY
 - Native Library Access
 - Environment Initialization
 
-7. ASSPayload.py
+7.- ASSPayload.py
 - - -
 PURPOSE
 - Create Analysis Payload
@@ -237,7 +249,7 @@ BOUNDARY
 - Payload Only
 - No Analysis
 
-8. ASSVerifiedPayload.py
+8.- ASSVerifiedPayload.py
 - - -
 PURPOSE
 - Validate Payload
@@ -247,7 +259,7 @@ BOUNDARY
 - Verified Payload Processing
 - Validation Layer
 
-9. ASSCacheFile.py
+9.- ASSCacheFile.py
 - - -
 PURPOSE
 - Cache Manager
@@ -258,7 +270,7 @@ BOUNDARY
 - Cache Only
 - No Analysis Logic
 
-10. ASSReport.py
+10.- ASSReport.py
 - - -
 PURPOSE
 - Generate Analysis Report
@@ -268,7 +280,7 @@ BOUNDARY
 - Report Generation
 - File Output
 
-11. ASSLogs.py
+11.- ASSLogs.py
 - - -
 PURPOSE
 - Logging System
@@ -279,9 +291,54 @@ BOUNDARY
 - Logging Only
 - No Business Logic
 
-12. ASSNotifiedTelegram.py
+12.- ASSRegistry.py
 - - -
 PURPOSE :
+- Central data "json".
+- Do not process any file production or core process
+to registry without pass ASSRegistry.py first.
+BOUNDARY :
+- Access "\Registry\...".
+- Read Registry.
+- Write Registry.
+- Update Registry.
+
+13.- ASSNative.py
+- - - 
+PURPOSE :
+- Load Module or Library from "\Runtime\...".
+BOUNDARY :
+- Read core library runtime process.
+
+14.- ASSConfig.py
+- - - 
+PURPOSE :
+BOUNDARY :
+
+15.- ASSContext.py
+- - -
+PURPOSE :
+- Core Context Process.
+BOUNDARY : 
+
+16.- ASSVersion.py
+- - -
+PURPOSE :
+- Control Version System.
+BOUNDARY :
+
+17.- ASSException.py
+
+18.- ASSNotifiedManagement.py
+- - - 
+PURPOSE :
+- Control And Management to Provider.
+BOUNDARY :
+
+19.- ASSNotifiedTelegram.py
+- - -
+PURPOSE :
+- Provider and Owner Telegram.
 - Notified "Telegram"
 - Notified any process or progress.
 - Used "Api Key Token"
@@ -291,9 +348,10 @@ Development and include Record Files and Audio Files.
 Developer And Administrators is this group.
 BOT2 : Notified for User and Customer to this group.
 
-13. ASSNotifiedDiscord.py
+20.- ASSNotifiedDiscord.py
 - - -
 PURPOSE :
+- Provider And Owner Discord.
 - Notified "Discord"
 - Notified for open System or Program that first times.
 - Used "Webhook"
@@ -301,8 +359,9 @@ BOUNDARY :
 - Notified for get enviroment any thing.
 - This group only for Developer and Administrators.
 
-14.- ASSNotifiedLine.py
+21.- ASSNotifiedLine.py
 PURPOSE :
+- Provider And Owner Line.
 - Notifed "Line".
 - Notified only per one day, Set Schedules time 00:00.
 BOUNDARY :
