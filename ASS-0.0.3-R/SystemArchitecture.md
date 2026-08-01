@@ -83,8 +83,12 @@ include all aduio files supported.
 - Recheck or validate just be done.
 - Done.
 
+# REGISTRY :
+* PATH : ASS-0.0.3-R
+1.- ASSConfigRegistry.json
+
 # FILES :
-1. ASSApplication.py
+1.- ASSApplication.py
 - - -
 PURPOSE
 - Application Entry Point
@@ -96,7 +100,7 @@ BOUNDARY
 - Startup / Shutdown
 - Global Application Control
 
-2. ASSGui.py
+2.- ASSGui.py
 - - -
 PURPOSE
 - Main User Interface
