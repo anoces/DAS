@@ -428,24 +428,267 @@ BOUNDARY :
 - On Operating System Opening Service Automatically.
 
 # PIPELINE STAGE :
-- ASSApplication
-- ↓
-- ASSGui
-- ↓
-- ASSGuiWorker
-- ↓
-- ASSRuntime
-- ↓
-- ASSInspector
-- ↓
-- ASSAnalyze
-- ↓
-- ASSPayload
-- ↓
-- ASSVerifiedPayload
-- ↓
-- ASSCacheFile
-- ↓
-- ASSReport
-- ↓
-- ASSLogs
+============================================================
+PIPELINE STAGE
+============================================================
+
+[ STAGE 01 ]
+ASSApplication
+------------------------------------------------------------
+- Application Entry Point
+- Initialize System
+- Initialize Configuration
+- Initialize Registry
+- Initialize Runtime
+- Initialize Notification Provider
+- Create Application Context
+- Create Session
+- Launch GUI
+
+                │
+                ▼
+
+[ STAGE 02 ]
+ASSGui
+------------------------------------------------------------
+- User Interface
+- User Interaction
+- Drag & Drop Folder
+- Select Output Folder
+- Select Pattern
+- Display Status
+- Display Progress
+- Send Request to Worker
+
+                │
+                ▼
+
+[ STAGE 03 ]
+ASSGuiWorker
+------------------------------------------------------------
+- Create Analyze Job
+- Background Thread
+- Progress Callback
+- Cancellation Support
+- Exception Forwarding
+
+                │
+                ▼
+
+[ STAGE 04 ]
+ASSContext
+------------------------------------------------------------
+- Create Runtime Context
+- Load Current Configuration
+- Load User Context
+- Create Analyze Context
+
+                │
+                ▼
+
+[ STAGE 05 ]
+ASSSession
+------------------------------------------------------------
+- Create Session
+- Create Job ID
+- Create Session ID
+- Session Lifetime
+- Session Status
+
+                │
+                ▼
+
+[ STAGE 06 ]
+ASSState
+------------------------------------------------------------
+State
+
+Idle
+↓
+
+Preparing
+↓
+
+Running
+↓
+
+Completed
+
+or
+
+Error
+
+or
+
+Cancelled
+
+                │
+                ▼
+
+[ STAGE 07 ]
+ASSRuntime
+------------------------------------------------------------
+- Runtime Initialization
+- Runtime Validation
+- Runtime Health Check
+- Runtime Capability
+- Runtime Ready
+
+                │
+                ▼
+
+[ STAGE 08 ]
+ASSNative
+------------------------------------------------------------
+- Load Native Library
+- Verify Native Library
+- Bind Native Function
+- Runtime API Ready
+
+                │
+                ▼
+
+[ STAGE 09 ]
+ASSInspector
+------------------------------------------------------------
+- Scan Folder
+- Discover Audio Files
+- Validate File
+- Read Metadata
+- Read Audio Information
+- Verify Supported Format
+
+                │
+                ▼
+
+[ STAGE 10 ]
+ASSAnalyze
+------------------------------------------------------------
+- Decode Audio
+- Extract Features
+- BPM
+- Key
+- Genre
+- Bitrate
+- Codec
+- Sample Rate
+- Metadata
+- Feature Extraction
+
+                │
+                ▼
+
+[ STAGE 11 ]
+ASSDecision
+------------------------------------------------------------
+- Customer Rule
+- Pattern Rule
+- Rename Rule
+- Score
+- Decision
+- Recommendation
+
+                │
+                ▼
+
+[ STAGE 12 ]
+ASSPayload
+------------------------------------------------------------
+- Build Payload
+- Serialize Data
+- Payload Version
+- Runtime Version
+- Feature Package
+
+                │
+                ▼
+
+[ STAGE 13 ]
+ASSVerifiedPayload
+------------------------------------------------------------
+- Payload Validation
+- Payload Integrity
+- Verify Runtime
+- Verify Analysis Result
+- Verify Required Fields
+
+                │
+                ▼
+
+[ STAGE 14 ]
+ASSRegistry
+------------------------------------------------------------
+- Register Job
+- Register Payload
+- Register Decision
+- Register Report
+- Update Registry
+- Registry Verification
+
+                │
+                ▼
+
+[ STAGE 15 ]
+ASSCacheFile
+------------------------------------------------------------
+- Cache Lookup
+- Cache Validation
+- Write Cache
+- Read Cache
+
+                │
+                ▼
+
+[ STAGE 16 ]
+ASSReport
+------------------------------------------------------------
+- Generate Report
+- Generate Summary
+- Export Report
+- Export Result
+
+                │
+                ▼
+
+[ STAGE 17 ]
+ASSLicense
+------------------------------------------------------------
+- Validate Trial
+- Validate License
+- Check Expire
+- Activate License
+
+                │
+                ▼
+
+[ STAGE 18 ]
+ASSNotifiedManagement
+------------------------------------------------------------
+- Select Provider
+- Route Notification
+- Dispatch Notification
+
+                │
+      ┌─────────┼─────────┐
+      ▼         ▼         ▼
+
+Telegram     Discord     Line
+
+                │
+                ▼
+
+[ STAGE 19 ]
+ASSLogs
+------------------------------------------------------------
+- Runtime Log
+- Analyze Log
+- Error Log
+- Debug Log
+- Session Log
+
+                │
+                ▼
+
+============================================================
+PROCESS COMPLETED
+============================================================
